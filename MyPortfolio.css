@@ -14,14 +14,24 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
 nav {
     background-color: #1b1f1f;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 68px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+/*#navbar {
+  background-color: #1b1f1f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}*/
 
 nav ul {
     display: flex;
@@ -185,7 +195,7 @@ main hr {
 
 .skills {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: center;
     margin: 40px;
 }
 
@@ -200,27 +210,73 @@ main hr {
     width: 90px;
 }
 
-.hidden {
-    display: none;
+  .show {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+  }
+  
+  .skills:hover .show {
+    opacity: 0.3;
+  }
+  
+  .skills:hover .middle {
+    opacity: 1;
+  }
+  
+  .hidden {
+    color: white;
+  }
+
+.internship {
+    justify-content: space-around;
+    margin: 50px;
+    padding: 50px;
+    align-items: center;
+    margin-bottom: 0%;
 }
 
-.show:hover+.hidden {
-    display: block;
-    color: rgb(157, 105, 207);
+.int {
+    display: flex;
+    margin: 30px;
+    margin-bottom: 0%;
+}
+
+.int>div {
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #141616;
+    border-radius: 20px;
+    padding:40px;
+    margin: 10px;
+}
+
+.internship h1 {
+    font-size: 2rem;
+    
+}
+
+.internship h3 {
+    color: rgb(217, 170, 255);
+    font-size: 1.5rem;
 }
 
 .fourthsection {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    margin: 100px 70px 30px 70px;
+    margin: 0px 70px 30px 70px;
 }
 
 .fourthsection h1 {
     font-size: 2rem;
-    margin-top: 50px;
 }
-
 
 .fourthsection h3{
     color:rgb(217, 170, 255) ;
@@ -238,14 +294,14 @@ main hr {
 
 .box1 {
     width: 430px;
-    height: 380px;
+    height: 400px;
     background-color: #1b1f1f;
     margin: 15px;
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 5px;
     border: 10px solid #1b1f1f;
-
+    /*overflow:auto;*/
 }
 
 .layer {
