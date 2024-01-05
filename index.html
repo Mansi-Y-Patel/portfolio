@@ -18,7 +18,7 @@
 
 <body id="body">
     <header>
-        <nav>
+        <nav class="fix"  id="navbar">
             <div class="left">Mansi's Portfolio</div>
 
             <div class="right">
@@ -27,6 +27,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#internship">Internships</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -125,26 +126,56 @@
             <h1>This is my Technology Stack</h1>
             <div class="skills">
                 <img src="html.png" class="show">
-                <div class="hidden">HTML</div>
+                <div class="middle"><div class="hidden">HTML</div></div>
                 <img src="css.png" class="show">
-                <div class="hidden">CSS</div>
+                <div class="middle"><div class="hidden">CSS</div></div>
                 <img src="javascript.jpg" class="show">
-                <div class="hidden">JavaScript</div>
+                <div class="middle" style="font-size: small;"><div class="hidden">JavaScript</div></div>
                 <img src="php.jpg" class="show">
-                <div class="hidden">php</div>
+                <div class="middle"><div class="hidden">php</div></div>
             </div>
                 
             <div class="skills">
                 <img src="c.png" class="show">
-                <div class="hidden">C language</div>
+                <div class="middle"><div class="hidden">C lang.</div></div>
                 <img src="python.png" class="show">
-                <div class="hidden">Python</div>
+                <div class="middle"><div class="hidden">Python</div></div>
                 <img src="sql.jpg" class="show">
-                <div class="hidden">SQL</div>
+                <div class="middle"><div class="hidden">SQL</div></div>
+                <img src="figma.png" class="show">
+                <div class="middle"><div class="hidden">Figma</div></div>
+                <img src="iot1.png" class="show">
+                <div class="middle"><div class="hidden">IoT</div></div>
                 
             </div>
         </section>
-        <br><br><br>
+        <br><br><br><br><br><br><br>
+
+        <section class="internship" id="internship">
+            <h1>Internships</h1>
+            <div class="int">
+
+                <div class="company">
+                    <div><img src="linde-logo.png" alt="" width="30%"></div>
+                    <h3>Linde Engineering India</h3>
+                    <div style="margin-top: 20px;">Internship on Data Science using Python programming language.</div>
+                    <div><span style="color: rgb(217, 170, 255);">Libraries used:</span> Tabula, PDFQuery, PDFminer, PyPDF2, PyMuPDF, PDFplumber</div>
+                    <div><span style="color: rgb(217, 170, 255);">Duration:</span> 1 month</div><br>
+                    
+                </div>
+
+                <div class="leftsec">
+                    <ul>
+                        <li>During my internship, I have worked on a project whose main focus was to extract important data from various Invoices like shipping bills,
+                            bill of entry, etc. which was PDF files.</li>
+                        <li>This PDFs was to be further converted into structured data and finally stored into Excel sheets for
+                            future references and to perform different operations on the data obtained.</li>
+                        <li>By doing so, all the shipment data can be stored at one place very
+                            efficiently as hundreds of PDFs was concise into a single Excel sheet.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <section class="fourthsection" id="projects">
 
@@ -154,14 +185,16 @@
                     <div class="layer">
                         <h3>Marketing Marvel<a href="http://localhost/php-practice/MM-Homepage.php" target="_blank"><i class="fa-solid fa-link" style="color: rgb(157, 105, 207); margin-left:8px;"></i></a></h3>
                         <div>Marketing marvel is a website which promotes brands to connect with potential customers using internet and other forms of digital communication.</div>
+                        <div style="color:rgb(148, 142, 153);">Tech Stack: HTML,CSS,JavaScript,PHP</div>
                         
                     </div>
                 </div>
 
                 <div class="box1" style="background-image: url(amazon.png);"><br><br><br><br><br><br><br><br><br><br><br>
                     <div class="layer">
-                        <h3>Amazon clone<a href="file:///D:/Amazon%20clone/amazon.html" target="_blank"><i class="fa-solid fa-link" style="color: rgb(157, 105, 207); margin-left:8px"></i></a></h3>
+                        <h3>Amazon clone<a href="amazon.html" target="_blank"><i class="fa-solid fa-link" style="color: rgb(157, 105, 207); margin-left:8px"></i></a></h3>
                         <div>Using HTML and CSS, I have designed the Amazon homepage clone.</div>
+                        <div style="color:rgb(148, 142, 153);">Tech Stack: HTML,CSS</div>
                     </div>
                 </div>
 
@@ -175,8 +208,9 @@
                 <div class="box1" style="background-image: url(smarthome.jpg);"><br><br><br><br><br><br><br><br><br><br><br>
                     <div class="layer">
                         <h3>IoT based Smart Home Application</h3>
-                        <div>Using IoT(Internet of Things), I have made a model demonstarting automation in smart home by integrating different types of sensors.</div>
-                        
+                        <div>Smart gardening system, Automated lighting, Smart door opening system</div>
+                        <div style="color:rgb(148, 142, 153);">Tech Stack: Arduino Uno board(Programmed using C++), Sensors used: Soil moisture sensor, PIR sensor, Ultrasonic Sensor and many more hardware components</div>
+
                     </div>
                 </div>
                 
@@ -250,6 +284,19 @@
             typeSpeed: 80,
         });
     </script>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
 </body>
 
 </html>
