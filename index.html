@@ -1,302 +1,300 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mansi's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="mlogo.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="MyPortfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
 </head>
 
-<body id="body">
-    <header>
-        <nav class="fix"  id="navbar">
-            <div class="left">Mansi's Portfolio</div>
+<body class="bg-black text-white w-full" id="body">
 
-            <div class="right">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#internship">Internships</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+    <!-- Navbar -->
+    <div class="w-full bg-zinc-900 lg:flex p-2">
+        <div class="text-2xl font-semibold p-2 md:items-center lg:mx-12">Mansi's Porfolio</div>
+        <div class="grid md:gap-10 grid-flow-col lg:ml-24 items-center overflow-auto no-scrollbar">
+            <div class="p-3 text-lg hover:text-purple-400 hover:font-semibold cursor-pointer"><a href="#home">Home</a>
             </div>
-        </nav>
-    </header>
+            <div class="p-3 text-lg hover:text-purple-400 hover:font-semibold cursor-pointer"><a href="#about">About</a>
+            </div>
+            <div class="p-3 text-lg hover:text-purple-400 hover:font-semibold cursor-pointer"><a
+                    href="#education">Education</a></div>
+            <div class="p-3 text-lg hover:text-purple-400 hover:font-semibold cursor-pointer"><a
+                    href="#skills">Skills</a></div>
+            <div class="p-3 text-lg hover:text-purple-400 hover:font-semibold cursor-pointer"><a
+                    href="#internship">Internships</a></div>
+            <div class="p-3 text-lg hover:text-purple-400 hover:font-semibold cursor-pointer"><a
+                    href="#projects">Projects</a></div>
+            <div class="p-3 text-lg hover:text-purple-400 hover:font-semibold cursor-pointer"><a
+                    href="#contact">Contact</a></div>
+        </div>
+    </div>
 
-    <main>
-        <section class="firstsection" id="home">
-            <div class="leftsection">Hi, My name is <span class="purple">Mansi</span>
-                <div>and I am a passionate </div>
-                <span id="element"></span>
-                <div class="button">
-                    <a href="MYP Resume.pdf" download class="btn" target="_blank">Download Resume</a>
+    <div class="lg:mx-28 lg:mb-6 lg:mt-2">
+
+        <!-- Introduction -->
+        <div class="px-8 py-10 grid md:grid-flow-col md:grid-col-2 gap-2 justify-between items-center" id="home">
+            <div class="text-3xl items-center p-5">
+                <div class="">Hi, My name is <span class="text-purple-400">Mansi
+                    </span> and I am a passionate
+                    <span id="element" class="text-purple-400"></span>
+                </div>
+                <div class="my-8">
+                    <a href="MYP Resume.pdf" download
+                        class="text-lg border rounded-lg p-3 bg-zinc-900 hover:font-semibold" target="_blank">Download
+                        Resume</a>
                 </div>
             </div>
-            <div class="rightsection"><img src="photo.jpg" style="border-radius: 50%;"></div>
-        </section>
+            <div><img src="photo.jpg" class="rounded-full w-96"></div>
+        </div>
 
-        <section class="about" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col1">
-                        <img src="developer.jpg">
+        <!-- About Me -->
+        <div class="px-8 py-10 grid md:grid-flow-col md:grid-col-2 gap-16 justify-between items-center" id="about">
+            <div>
+                <img src="developer.jpg" class="rounded-full w-96">
+            </div>
+            <div class="">
+                <div class="text-3xl font-extrabold mb-5">About Me</div>
+                <div class="text-lg">I have completed Bachelor of Engineering in Computer Engineering and I am an
+                    enthusiast web developer and python programmer with good knowledge of languages like HTML, CSS,
+                    JavaScript, Python and many more.</div>
+                <div class="md:pl-8 mt-4">
+                    <div class="text-xl font-bold mb-3">Personal Information:</div>
+                    <div class="grid gap-2">
+                        <div><span class="text-purple-400">Name: </span> Patel Mansi Yogeshkumar</p>
+                        </div>
+                        <div><span class="text-purple-400">Age: </span> 22</div>
+                        <div><span class="text-purple-400">Skills: </span> Teamwork skills, Creativity,
+                            Organization</div>
+                        <div><span class="text-purple-400">Hobbies: </span> Travelling, Painting</div>
+                        <div><span class="text-purple-400">Languages: </span> English, Gujarati, Hindi</div>
+                        <div><span class="text-purple-400">DOB:</span> 06-09-2002</div>
                     </div>
-                    <div class="col2">
-                        <h1>About Me</h1><br>
-                        <p>I am currently pursuing B.E. in Computer Engineering and an enthusiast front end developer
-                            with good knowledge of programming languages like HTML, CSS and many more. </p><br>
-                        <div style="padding-left: 40px;">
-                            <h3>Personal Information:</h3><br>
-                            <p><span style="color: rgb(217, 170, 255);">Name: </span> Patel Mansi Y.</p>
-                            <p><span style="color: rgb(217, 170, 255);">Age: </span> 21</p>
-                            <p><span style="color: rgb(217, 170, 255);">Skills: </span> Teamwork skills, Creativity,
-                                Organization</p>
-                            <p><span style="color: rgb(217, 170, 255);">Hobbies: </span> Travelling, Painting</p>
-                            <p><span style="color: rgb(217, 170, 255);">Languages: </span> English, Gujarati, Hindi</p>
-                            <p><span style="color: rgb(217, 170, 255);">DOB:</span> 06-09-2002</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- My Education -->
+        <div class="px-8 py-10" id="education">
+            <div class="text-3xl font-extrabold">My Education</div>
+            <div class="my-8 grid md:grid-flow-col md:grid-cols-3 gap-2 justify-evenly">
+                <div class="p-4 grid gap-2 border-zinc-800 border-2 rounded-lg">
+                    <div class="text-purple-400 text-3xl"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="text-xl font-bold text-purple-300 my-3">Bachelor of Engineering in Computer Engineering
+                    </div>
+                    <div class="">Sardar Vallabhbhai Patel Institute of Technology, Vasad</div>
+                    <div class="">2020-2024</div>
+                    <div class="">CGPA: 8.76</div>
+                </div>
+                <div class="p-4 grid gap-2 border-zinc-800 border-2 rounded-lg">
+                    <div class="text-purple-400 text-3xl"> <i class="fa-solid fa-book-open"></i></i></div>
+                    <div class="text-xl font-bold text-purple-300 my-3">Higher Secondary School Certificate</div>
+                    <div class="">Shree Saraswati Vidyalaya</div>
+                    <div class="">2019-2020</div>
+                    <div class="">Percentile: 65.98%</div>
+                </div>
+                <div class="p-4 grid gap-2 border-zinc-800 border-2 rounded-lg">
+                    <div class="text-purple-400 text-3xl"> <i class="fa-solid fa-chalkboard"></i></div>
+                    <div class="text-xl font-bold text-purple-300 my-3">Secondary School Certificate</div>
+                    <div class="">Ambe Vidyalaya</div>
+                    <div class="">2017-2018</div>
+                    <div class="">Percentile: 96.19%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="px-8 py-10" id="skills">
+            <div class="text-3xl font-extrabold mb-5">My Technology Stack</div>
+            <div class="flex md:flex-col sm:flex-row items-center justify-center">
+                <div class="grid md:grid-flow-col gap-8 p-5 justify-center">
+                    <img src="html.png" alt="" class="w-32 rounded-full">
+                    <img src="css.png" alt="" class="w-32 rounded-full">
+                    <img src="javascript.jpg" alt="" class="w-32 rounded-full">
+                    <img src="php.jpg" alt="" class="w-32 h-32 rounded-full">
+                </div>
+                <div class="grid md:grid-flow-col gap-8 p-5 justify-center">
+                    <img src="figma.png" alt="" class="w-32 rounded-full">
+                    <img src="python.png" alt="" class="w-32 rounded-full">
+                    <img src="c.png" alt="" class="w-32 rounded-full">
+                    <img src="sql.jpg" alt="" class="w-32 rounded-full">
+                    <img src="iot1.png" alt="" class="w-32 rounded-full">
+                </div>
+            </div>
+        </div>
+
+        <!-- Internships -->
+        <div class="px-8 py-10" id="internship">
+            <div class="text-3xl font-extrabold mb-5">Internships</div>
+            <div class="">
+                <div class="grid md:grid-flow-col gap-2 border-zinc-800 border-2 rounded-lg md:grid-cols-2">
+                    <div class="p-4 grid gap-2">
+                        <img src="logo1.png" alt="" class="w-20 bg-white">
+                        <div class="text-xl font-bold text-purple-400">Sardar Vallabhbhai Patel Institute of Technology,
+                            Vasad</div>
+                        <div class="font-bold">Internship on Web Developmnet and UI/UX Design</div>
+                        <div class="">Duration: 3 months</div>
+                        <div class="">Technology used: Vue 3 (JavaScript Framework), Tailwind CSS, JWT Authentication,
+                            Figma (For UI Designing) and many more</div>
+                    </div>
+                    <div class="p-4 grid gap-2 items-center">
+                        <div class="">
+                            In the internship, I have built a CMS (Content Management System) for the students of
+                            college which was used to provide various information by the college administration.
+                        </div>
+                        <div class="">
+                            It gives information to students like their schedule, semester wise subjects and attendance,
+                            study materials, college events, circulars, etc.
+                        </div>
+                        <div class="">
+                            The dashboard of the website also shows the ongoing and upcoming lectures to the students
+                            and have a customizable To-Do list which can be accessed from multiple devices.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid md:grid-flow-col gap-2 mt-3 border-zinc-800 border-2 rounded-lg md:grid-cols-2">
+                    <div class="p-4 grid gap-2">
+                        <img src="Linde-Logo.png" alt="" class="w-32">
+                        <div class="text-xl font-bold text-purple-400">Linde Engineering India</div>
+                        <div class="font-bold">Internship on Data Science</div>
+                        <div class="">Duration: 1 month</div>
+                        <div class="">Technology used: Python programming language</div>
+                        <div class="">Libraries used: Tabula, PDFQuery, PDFminer, PyPDF2, PyMuPDF, PDFplumber</div>
+                    </div>
+                    <div class="p-4 grid gap-2 items-center">
+                        <div class="">
+                            During my internship, I have worked on a project whose main focus was to extract important
+                            data from various Invoices like shipping bills, bill of entry, etc. which was PDF files.
+                        </div>
+                        <div class="">
+                            This PDFs was to be further converted into structured data and finally stored into Excel
+                            sheets for future references and to perform different operations on the data obtained.
+                        </div>
+                        <div class="">
+                            By doing so, all the shipment data can be stored at one place very efficiently as hundreds
+                            of PDFs was concise into a single Excel sheet.
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="secondsection" id="education">
-            <hr style="margin-top: 100px;">
-            <h1>My Education</h1>
-            <br><br>
-            <div class="box">
-                <div class="vertical">
-                    <div class="icon">
-                        <i class="fa-solid fa-laptop-code"></i>
-                    </div>
-                    <div class="verticaltitle">
-                        SVIT, Vasad
-                    </div>
-                    <div class="verticaldesc">
-                        B.E. in Computer Engineering<br>
-                        2020-2024<br>
-                        CGPA: 8.50
-                    </div>
+        <!-- Projects -->
+        <div class="px-8 py-10" id="projects">
+            <div class="text-3xl font-extrabold mb-5">My Projects</div>
+            <div class="grid gap-5 md:grid-cols-2">
+                <div class="p-4 grid gap-2 border-zinc-800 border-2 rounded-lg">
+                    <div class="w-full"><img src="cms.png" alt=""></div>
+                    <div class="text-xl font-bold text-purple-300 hover:text-purple-400"><a
+                            href="https://www.figma.com/design/LSVMOCCsSorIsYsy0HJoIM/CMS-Website?node-id=0-1&t=ZxpER1PIvyefXGPh-1"
+                            target="_blank">UI/UX Design<i class="ml-3 fa-solid fa-link"></i></a></div>
+                    <div class="">During my internship at SVIT, Vasad I have designed the User Interface of the website
+                        which includes detailed designs for all the webpages.</div>
+                    <div class="">Tech Stack: Figma (Designing Tool)</div>
                 </div>
-
-                <div class="vertical">
-                    <div class="icon">
-                        <i class="fa-solid fa-book-open"></i>
-                    </div>
-                    <div class="verticaltitle">
-                        Shree Saraswati Vidyalaya
-                    </div>
-                    <div class="verticaldesc">
-                        HSC<br>
-                        2019-2020<br>
-                        Percentile: 65.98%
-                    </div>
+                <div class="p-4 grid gap-2 border-zinc-800 border-2 rounded-lg ">
+                    <div class="w-full"><img src="MM.png" alt=""></div>
+                    <div class="text-xl font-bold text-purple-300 hover:text-purple-400"><a
+                            href="http://localhost/php-practice/MM-Homepage.php" target="_blank">Marketing Marvel<i
+                                class="ml-3 fa-solid fa-link"></i></a></div>
+                    <div class="">Marketing marvel is a website which promotes brands to connect with potential
+                        customers using internet and other forms of digital communication.</div>
+                    <div class="">Tech Stack: HTML,CSS,JavaScript,PHP</div>
                 </div>
-
-                <div class="vertical">
-                    <div class="icon">
-                        <i class="fa-solid fa-chalkboard"></i>
-                    </div>
-                    <div class="verticaltitle">
-                        Ambe Vidyalaya
-                    </div>
-                    <div class="verticaldesc">
-                        SSC<br>
-                        2017-2018<br>
-                        Percentile: 96.19%
-                    </div>
+                <div class="p-4 grid gap-2 border-zinc-800 border-2 rounded-lg">
+                    <div class="w-full"><img src="amazon.png" alt="" class=""></div>
+                    <div class="text-xl font-bold text-purple-300 hover:text-purple-400"><a href="amazon.html"
+                            target="_blank">Amazon Homepage clone<i class="fa-solid fa-link ml-3"></i></a></div>
+                    <div class="">Using HTML and CSS, I have designed the Amazon homepage clone.</div>
+                    <div class="">Tech Stack: HTML,CSS</div>
+                </div>
+                <div class="p-4 grid gap-2 border-zinc-800 border-2 rounded-lg">
+                    <div class="w-full"><img src="piezoe.png" alt="" class=""></div>
+                    <div class="text-xl font-bold text-purple-300">Piezoelectric Road</div>
+                    <div class="">I am currently working on a Project for electricity generation through Piezoelectric
+                        sensors which are used to convert mechanical stress into electricity.</div>
+                </div>
+                <div class="p-4 grid gap-2 border-zinc-800 border-2 rounded-lg">
+                    <div class="w-full"><img src="smarthome.jpg" alt="" class=""></div>
+                    <div class="text-xl font-bold text-purple-300">IoT based Smart Home Application</div>
+                    <div class="">Smart gardening system, Automated lighting, Smart door opening system</div>
+                    <div class="">Tech Stack: Arduino Uno board(Programmed using C++), Sensors used: Soil
+                        moisture sensor, PIR sensor, Ultrasonic Sensor and many more hardware components</div>
                 </div>
             </div>
-        </section><br><br><br><br><br><br>
+        </div>
 
-        <section class="thirdsection" id="skills">
-
-            <h1>This is my Technology Stack</h1>
-            <div class="skills">
-                <img src="html.png" class="show">
-                <div class="middle"><div class="hidden">HTML</div></div>
-                <img src="css.png" class="show">
-                <div class="middle"><div class="hidden">CSS</div></div>
-                <img src="javascript.jpg" class="show">
-                <div class="middle" style="font-size: small;"><div class="hidden">JavaScript</div></div>
-                <img src="php.jpg" class="show">
-                <div class="middle"><div class="hidden">php</div></div>
+        <!-- Contact Me -->
+        <div class="px-8 py-10" id="contact">
+            <div class="text-3xl font-extrabold mb-5">Contact Me</div>
+            <div class="flex gap-2 flex justify-center mb-3"><i class="fa-regular fa-envelope text-3xl"></i>
+                <div class="text-lg">mansipatel1743@gmail.com</div>
             </div>
-                
-            <div class="skills">
-                <img src="c.png" class="show">
-                <div class="middle"><div class="hidden">C lang.</div></div>
-                <img src="python.png" class="show">
-                <div class="middle"><div class="hidden">Python</div></div>
-                <img src="sql.jpg" class="show">
-                <div class="middle"><div class="hidden">SQL</div></div>
-                <img src="figma.png" class="show">
-                <div class="middle"><div class="hidden">Figma</div></div>
-                <img src="iot1.png" class="show">
-                <div class="middle"><div class="hidden">IoT</div></div>
-                
-            </div>
-        </section>
-        <br><br><br><br><br><br><br>
-
-        <section class="internship" id="internship">
-            <h1>Internships</h1>
-            <div class="int">
-
-                <div class="company">
-                    <div><img src="Linde-Logo.png" alt="logo of the company" width="30%"></div>
-                    <h3>Linde Engineering India</h3>
-                    <div style="margin-top: 20px;">Internship on Data Science using Python programming language.</div>
-                    <div><span style="color: rgb(217, 170, 255);">Libraries used:</span> Tabula, PDFQuery, PDFminer, PyPDF2, PyMuPDF, PDFplumber</div>
-                    <div><span style="color: rgb(217, 170, 255);">Duration:</span> 1 month</div><br>
-                    
+            <div class="flex justify-center gap-6">
+                <div class="hover:text-purple-400 hover:font-semibold cursor-pointer">
+                    <a href="https://www.linkedin.com/in/mansi-patel-784494216/" target="_blank">
+                        <i class="fa-brands fa-linkedin text-3xl"></i>
+                    </a>
                 </div>
-
-                <div class="leftsec">
-                    <ul>
-                        <li>During my internship, I have worked on a project whose main focus was to extract important data from various Invoices like shipping bills,
-                            bill of entry, etc. which was PDF files.</li>
-                        <li>This PDFs was to be further converted into structured data and finally stored into Excel sheets for
-                            future references and to perform different operations on the data obtained.</li>
-                        <li>By doing so, all the shipment data can be stored at one place very
-                            efficiently as hundreds of PDFs was concise into a single Excel sheet.</li>
-                    </ul>
+                <div class="hover:text-purple-400 hover:font-semibold cursor-pointer">
+                    <a href="https://www.instagram.com/mansi_patel_0625/" target="_blank">
+                        <i class="fa-brands fa-instagram text-3xl"></i>
+                    </a>
+                </div>
+                <div class="hover:text-purple-400 hover:font-semibold cursor-pointer">
+                    <a href="https://www.facebook.com/profile.php?id=100053682769823" target="_blank">
+                        <i class="fa-brands fa-facebook text-3xl"></i>
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="fourthsection" id="projects">
-
-            <h1>My Projects</h1>
-            <div class="project">
-                <div class="box1" style="background-image: url(MM.png);"><br><br><br><br><br><br><br><br><br><br><br>
-                    <div class="layer">
-                        <h3>Marketing Marvel<a href="http://localhost/php-practice/MM-Homepage.php" target="_blank"><i class="fa-solid fa-link" style="color: rgb(157, 105, 207); margin-left:8px;"></i></a></h3>
-                        <div>Marketing marvel is a website which promotes brands to connect with potential customers using internet and other forms of digital communication.</div>
-                        <div style="color:rgb(148, 142, 153);">Tech Stack: HTML,CSS,JavaScript,PHP</div>
-                        
-                    </div>
-                </div>
-
-                <div class="box1" style="background-image: url(amazon.png);"><br><br><br><br><br><br><br><br><br><br><br>
-                    <div class="layer">
-                        <h3>Amazon clone<a href="amazon.html" target="_blank"><i class="fa-solid fa-link" style="color: rgb(157, 105, 207); margin-left:8px"></i></a></h3>
-                        <div>Using HTML and CSS, I have designed the Amazon homepage clone.</div>
-                        <div style="color:rgb(148, 142, 153);">Tech Stack: HTML,CSS</div>
-                    </div>
-                </div>
-
-                <div class="box1" style="background-image: url(piezoe.png);"><br><br><br><br><br><br><br><br><br><br><br>
-                    <div class="layer">
-                        <h3>Piezoelectric Road</h3>
-                        <div>I am currently working on a Project for electricity generation through Piezoelectric sensors which are used to convert mechanical stress into electricity.</div>
-                    </div>
-                </div>
-
-                <div class="box1" style="background-image: url(smarthome.jpg);"><br><br><br><br><br><br><br><br><br><br><br>
-                    <div class="layer">
-                        <h3>IoT based Smart Home Application</h3>
-                        <div>Smart gardening system, Automated lighting, Smart door opening system</div>
-                        <div style="color:rgb(148, 142, 153);">Tech Stack: Arduino Uno board(Programmed using C++), Sensors used: Soil moisture sensor, PIR sensor, Ultrasonic Sensor and many more hardware components</div>
-
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <!--<scetion class="fourthsection">
-            <h1>My Projects</h1>
-            <div class="projects">
-                <div class="container">
-                    <div class="projectlist">
-                        <div class="projectno">
-                            <img src="MM.png">
-                        </div>
-
-                        <div class="projectno">
-                            <img src="amazon.png">
-                        </div>
-
-                        <div class="projectno">
-                            <img src="piezo.png">
-                        </div>
-
-                        <div class="projectno">
-                            <img src="smarthome.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </scetion>-->
-
-        <section class="fifthsection" id="contact">
-
-            <div class="contact">
-                <div class="contactleft">
-                    <h1>Contact Me</h1>
-                    <p><i class="fa-regular fa-envelope"
-                            style="color: #ffffff; margin: 10px;"></i>mansipatel1743@gmail.com</p>
-                    <!--<p><i class="fa-solid fa-phone" style="color: #ffffff; margin: 10px;"></i>+91 7433879714</p>-->
-                    <a href="https://www.linkedin.com/in/mansi-patel-784494216/" target="_blank"><i
-                            class="fa-brands fa-linkedin"
-                            style="color: #ffffff; margin: 15px; font-size: 40px;"></i></a>
-                    <a href="https://www.instagram.com/mansi_patel_0625/" target="_blank"><i
-                            class="fa-brands fa-instagram"
-                            style="color: #ffffff; margin: 15px; font-size:40px;"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100053682769823" target="_blank"><i
-                            class="fa-brands fa-facebook" style="color: #ffffff;margin: 15px; font-size: 40px;"></i></a>
-                </div>
-
-                <div class="contactright">
-                    <form>
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <section class="back" align="center" style="margin: 50px;">
-            <a href="#body" style="text-decoration: none; color:rgb(157, 105, 207)"><p style="font-size:larger;">Back to top<i class="fa-solid fa-angles-up" style="margin: 15px; font-size: 20px;"></i></p></a>
-        </section>
-
-    </main>
+        <div class="flex justify-center px-8 py-4">
+            <a href="#body" class="text-purple-300 text-xl items-center hover:text-purple-400 hover:font-bold">Back to
+                top<i class="ml-2 fa-solid fa-angles-up"></i></p></a>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Computer Engineer', 'Front-end Developer'],
+            strings: ['Web Developer', 'UI/UX Designer', 'Python Programmer'],
             typeSpeed: 80,
         });
-    </script>
-
-    <script>
         var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-50px";
-          }
-          prevScrollpos = currentScrollPos;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
         }
-        </script>
+    </script>
 </body>
 
 </html>
